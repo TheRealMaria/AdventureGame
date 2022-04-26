@@ -15,7 +15,7 @@ body {
 
 }
 .three-col aside {
-  background: white;
+  background: pink;
   flex: 20%;
   border-radius: 1px;
   margin: 10px;
