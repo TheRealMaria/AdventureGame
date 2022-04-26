@@ -1,0 +1,113 @@
+main {
+    width: 90%;
+    margin:auto;
+    border-radius: 12px;
+    padding: 100px 0px 0px 0px;
+    flex:100%;
+  }
+
+body {
+  background: grey;
+}
+
+.three-col { 
+    display: flex;
+
+}
+.three-col aside {
+  background: white;
+  flex: 20%;
+  border-radius: 1px;
+  margin: 10px;
+  padding: 10px;
+
+
+}
+.three-col article { 
+    flex: 98%;
+    padding:0vw 10vw 0vw 10vw;
+    background: white;
+
+}
+.inventory{
+  margin: 10px;
+  padding: 10px;
+  flex: 20%;
+  background: white;
+}
+
+.pageimg{
+width: 100%;
+}
+
+
+body {
+  margin: 0;
+}
+
+  
+section#mapland {
+    width: 3000px;
+    height: 3000px;
+    margin: auto;
+    overflow: scroll;
+    position: relative;
+  }
+#map {
+    width: 100%;
+    cursor: move;
+    position: absolute;
+  }
+  
+#center {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+  }
+  #mapbuttonmountain{
+    width:27vw;
+}
+  #mapbuttonforest{
+      width:23vw;
+  }
+  #mapbuttonsea{
+      width:20vw;
+  }
+ #mapbuttonfield{
+        width:29vw;
+  }
+.field {
+    display: flex;
+    position: absolute;
+    top: 23%;
+    left: 23%;
+    border: 1px solid purple;
+  }
+
+  .forest {
+    display:flex;
+    position: absolute;
+    top: 56%;
+    left: 9%;
+    border: 1px solid purple;
+  }
+  .mountain {
+    display: flex;
+    position: absolute;
+    top: 12%;
+    left: 60%;
+    border: 1px solid purple;
+  }
+  .sea {
+    display: flex;
+    position: absolute;
+    top: 72%;
+    left: 60%;
+    border: 1px solid purple;
+  }
+a {
+    z-index: 2;
+  }
