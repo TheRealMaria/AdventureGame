@@ -111,3 +111,15 @@ section#mapland {
 a {
     z-index: 2;
   }
+
+  p:not(.aone) {
+    display: none;
+  }
+  
+  .button {
+    background-color: purple;
+
+  }
+  .button:hover {
+    background-color: blue;
+  }

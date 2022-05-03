@@ -50,9 +50,19 @@ const changeText = (e) => {
     // Multiple lines solution
     const element = $("#element");
     const textToReplace = element.text();
-    const newText = textToReplace.replace("booty boot boot whattup", "whattup its ya boy skinny penis");
+    const newText = textToReplace.replace("booty boot boot whattup", "whattup its ya bo");
     element.text(newText);
   };
   
   // Attaching the click event on the button
   $(document).on('click', '#changeText', changeText);
+
+  $('p.aone').click(function(){
+    $('.aone').css('display','block')
+    $('p').not('.aone').css ('display','none')
+  })
+
+  $('.atwo').click(function(){
+    $('.atwo').css('display','block')
+    $('p').not('.atwo').css ('display','none')
+  })
