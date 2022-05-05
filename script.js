@@ -45,24 +45,59 @@ function dragElement(elmnt) {
   }
 }
 
-const changeText = (e) => {
-  
-    // Multiple lines solution
-    const element = $("#element");
-    const textToReplace = element.text();
-    const newText = textToReplace.replace("booty boot boot whattup", "whattup its ya bo");
-    element.text(newText);
-  };
-  
-  // Attaching the click event on the button
-  $(document).on('click', '#changeText', changeText);
+let myPlace = localStorage.getItem('place')
 
-  $('p.aone').click(function(){
-    $('.aone').css('display','block')
-    $('p').not('.aone').css ('display','none')
+if (myPlace) {
+  localStorage.setItem('place', 'one')
+  myPlace = 'one'
+  console.log(myPlace)
+} else {
+  myPlace = localStorage.getItem('place')
+  console.log(myPlace)
+}
+
+$('a.d1a').click(function () {
+  localStorage.setItem('place', 'd1a')
+  myPlace = localStorage.getItem('place')
+  console.log(myPlace)
+  if (myPlace == 'd1a') {
+    $('p.d1a').css('display', 'block')
+    $('p').not('.d1a').css('display', 'none')
+  }
+})
+
+  $('a.d1b').click(function () {
+    $('p.d1b').css('display', 'block')
+    $('p').not('.d1b').css('display', 'none')
+    localStorage.setItem('place', 'd1b')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
   })
-
-  $('.atwo').click(function(){
-    $('.atwo').css('display','block')
-    $('p').not('.atwo').css ('display','none')
+  $('a.d2a').click(function () {
+    $('p.d2a').css('display', 'block')
+    $('p').not('.d2a').css('display', 'none')
+    localStorage.setItem('place', 'd2a')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
+  })
+  $('a.d2b').click(function () {
+    $('p.d2b').css('display', 'block')
+    $('p').not('.d2b').css('display', 'none')
+    localStorage.setItem('place', 'd2b')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
+  })
+  $('a.d2c').click(function () {
+    $('p.d2c').css('display', 'block')
+    $('p').not('.d2c').css('display', 'none')
+    localStorage.setItem('place', 'd2c')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
+  })
+  $('a.d2d').click(function () {
+    $('p.d2d').css('display', 'block')
+    $('p').not('.d2d').css('display', 'none')
+    localStorage.setItem('place', 'd2d')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
   })
