@@ -61,42 +61,47 @@ $('a.d1a').click(function () {
   myPlace = localStorage.getItem('place')
   console.log(myPlace)
   if (myPlace == 'd1a') {
-    $('p.d1a').css('display', 'block')
-    $('p').not('.d1a').css('display', 'none')
+    $('div.d1a').css('display', 'block')
+    $('div').not('.d1a').css('display', 'none')
   }
 })
 
+
+
   $('a.d1b').click(function () {
-    $('p.d1b').css('display', 'block')
-    $('p').not('.d1b').css('display', 'none')
+    $('div.d1b').css('display', 'block')
+    $('div').not('.d1b').css('display', 'none')
     localStorage.setItem('place', 'd1b')
     myPlace = localStorage.getItem('place')
     console.log(myPlace)
   })
+
+
+
   $('a.d2a').click(function () {
-    $('p.d2a').css('display', 'block')
-    $('p').not('.d2a').css('display', 'none')
+    $('div.d2a').css('display', 'block')
+    $('div').not('.d2a').css('display', 'none')
     localStorage.setItem('place', 'd2a')
     myPlace = localStorage.getItem('place')
     console.log(myPlace)
   })
   $('a.d2b').click(function () {
-    $('p.d2b').css('display', 'block')
-    $('p').not('.d2b').css('display', 'none')
+    $('div.d2b').css('display', 'block')
+    $('div').not('.d2b').css('display', 'none')
     localStorage.setItem('place', 'd2b')
     myPlace = localStorage.getItem('place')
     console.log(myPlace)
   })
   $('a.d2c').click(function () {
-    $('p.d2c').css('display', 'block')
-    $('p').not('.d2c').css('display', 'none')
+    $('div.d2c').css('display', 'block')
+    $('div').not('.d2c').css('display', 'none')
     localStorage.setItem('place', 'd2c')
     myPlace = localStorage.getItem('place')
     console.log(myPlace)
   })
   $('a.d2d').click(function () {
-    $('p.d2d').css('display', 'block')
-    $('p').not('.d2d').css('display', 'none')
+    $('div.d2d').css('display', 'block')
+    $('div').not('.d2d').css('display', 'none')
     localStorage.setItem('place', 'd2d')
     myPlace = localStorage.getItem('place')
     console.log(myPlace)

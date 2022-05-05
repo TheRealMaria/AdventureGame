@@ -126,9 +126,7 @@ a {
     z-index: 2;
   }
 
-  p:not(.one) {
-    display: none;
-  }
+
 
   br {
     margin-bottom: 10px;
@@ -151,4 +149,8 @@ a {
     color: aquamarine;
     text-decoration: none;
     border: 1px solid aquamarine;
+  }
+
+  p:not(.one) {
+    display: none;
   }
