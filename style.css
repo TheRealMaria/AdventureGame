@@ -7,14 +7,28 @@ main {
     padding: 100px 0px 0px 0px;
     flex:100%;
   }
+.aboutpage main{
+    background-image: url('images/map.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+.aboutpage article {
+  background-color: grey;
+  color: white;
+  flex: 80%;
+  padding: 20px;
+  margin: auto;
+  position:relative;
 
+}
 body {
   background: #E9E7DA;
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 31px;
+  font-size: 19px;
+  line-height: 25px;
   color: #000000;
 }
 .death {
@@ -39,7 +53,6 @@ margin-top: 5vw;
   display: inline-block;
 
 }
-
 h1{
   text-align: center;
   font-family: 'Roboto Slab', serif;
@@ -47,6 +60,8 @@ h1{
 }
 .three-col { 
     display: flex;
+    flex-direction: row;
+    margin: auto ;
 
 }
 .three-col aside {
@@ -56,21 +71,26 @@ h1{
   border-radius: 1px;
   margin: 10px;
   padding: 10px;
-
-
+ display:flex;
+ flex-direction: column;
 }
 
 .three-col article { 
-    flex: 80%;
- 
+  flex: 80%;
+  position: relative;
 }
 
+
 .inventory{
-  margin: 10px;
-  padding: 10px;
-  flex: 10%;
+  flex: auto;
   background: rgba(0, 0, 0, 0.44);
   color: white;
+  flex:auto;
+  flex-direction:column;
+  margin: 50px;
+  padding: 10px;
+  position:relative;
+  float: right;
 }
 
 .pageimg{
@@ -111,34 +131,52 @@ section#mapland {
  #mapbuttonfield{
         width:29vw;
   }
+  .field:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+     }
 .field {
     display: flex;
     position: absolute;
-    top: 23%;
-    left: 23%;
-    border: 1px solid purple;
+    top: 19%;
+    left: 15%;
+    
   }
-
+  .forest:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+     }
   .forest {
     display:flex;
     position:absolute;
     top: 56%;
     left: 9%;
-    border: 1px solid purple;
   }
+  .mountain:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+     }
   .mountain {
     display: flex;
     position: absolute;
-    top: 12%;
-    left: 60%;
-    border: 1px solid purple;
+    top: 10%;
+    left: 57%;
+    
   }
+  .sea:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+     }
   .sea {
     display: flex;
     position: absolute;
-    top: 72%;
+    top: 69%;
     left: 60%;
-    border: 1px solid purple;
+   
   }
 
 a {
@@ -154,7 +192,7 @@ a {
 
   
   .button {
-    display: inline-block;
+    display:grid;
     background-color: grey;
     text-align: center;
     font-family: 'Roboto Slab', serif;
@@ -167,6 +205,7 @@ a {
     
   }
   .button:hover {
+    text-align: center;
     background-color: darkcyan;
     color: aquamarine;
     text-decoration: none;
