@@ -1,11 +1,7 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto+Slab:wght@200;800&display=swap');
 
 main {
-    width: 90%;
+    width: 80%;
     margin:auto;
     border-radius: 12px;
     padding: 100px 0px 0px 0px;
@@ -14,19 +10,40 @@ main {
 
 body {
   background: #E9E7DA;
-  font-family: 'Baskervville';
+  font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
 }
-.storybody{
+.death {
   margin: 0vw 5vw 0vw 5vw;
 }
-
-.h2{
+.deathbutton {
   text-align: center;
+  display: inline-block;
+  background-color: rgb(122, 12, 0);
+    color: white;
+    text-decoration:none;
+margin-top: 5vw;
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid white;
+}
+.storybody{
+  border: 8px solid white;
+  margin: 12px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: inline-block;
+
+}
+
+h1{
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
 }
 .three-col { 
     display: flex;
@@ -34,24 +51,26 @@ body {
 }
 .three-col aside {
   background: rgba(0, 0, 0, 0.44);
-  flex: 20%;
+  flex: 10%;
+  color: white;
   border-radius: 1px;
   margin: 10px;
   padding: 10px;
 
 
 }
+
 .three-col article { 
-    flex: 98%;
-  margin:0vw 10vw 0vw 10vw;
-    background: #F5F4EC;
+    flex: 80%;
+ 
 }
 
 .inventory{
   margin: 10px;
   padding: 10px;
-  flex: 20%;
+  flex: 10%;
   background: rgba(0, 0, 0, 0.44);
+  color: white;
 }
 
 .pageimg{
@@ -78,7 +97,7 @@ section#mapland {
     top: 10px;
     width: 100px;
     height: 100px;
-    border: 2px solid red;
+    
   }
   #mapbuttonmountain{
     width:27vw;
@@ -93,20 +112,16 @@ section#mapland {
         width:29vw;
   }
 .field {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  z-index: 4;
-  top: 26%;
-  left: 30%;
-  border: 2px solid purple;
-}
-
+    display: flex;
+    position: absolute;
+    top: 23%;
+    left: 23%;
+    border: 1px solid purple;
+  }
 
   .forest {
     display:flex;
-    position: absolute;
+    position:absolute;
     top: 56%;
     left: 9%;
     border: 1px solid purple;
@@ -140,13 +155,16 @@ a {
   
   .button {
     display: inline-block;
-    background-color: aquamarine;
-    color: darkcyan;
+    background-color: grey;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: white;
     text-decoration: none;
     margin: 20px;
     border-radius: 12px;
     padding: 10px;
-    border: 1px solid darkcyan;
+    border: 1px solid black;
+    
   }
   .button:hover {
     background-color: darkcyan;
@@ -155,6 +173,7 @@ a {
     border: 1px solid aquamarine;
   }
 
-  p:not(.one) {
+
+  div div:not(.one) {
     display: none;
   }
