@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto+Slab:wght@200;800&display=swap');
 
 main {
-    width: 80%;
+    width: 96%;
     margin:auto;
     border-radius: 12px;
     padding: 100px 0px 0px 0px;
@@ -14,7 +14,7 @@ main {
     background-size: cover;
   }
 .aboutpage article {
-  background-color: grey;
+  background: rgba(80, 80, 80, 0.799);;
   color: white;
   flex: 80%;
   padding: 20px;
@@ -28,7 +28,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
-  line-height: 25px;
+  line-height: 28px;
   color: #000000;
 }
 .death {
@@ -48,8 +48,9 @@ margin-top: 5vw;
 .storybody{
   border: 8px solid white;
   margin: 12px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 5vw;
   display: inline-block;
 
 }
@@ -65,14 +66,16 @@ h1{
 
 }
 .three-col aside {
-  background: rgba(0, 0, 0, 0.44);
-  flex: 10%;
+  background: rgba(80, 80, 80, 0.799);
+  flex: 8%;
   color: white;
   border-radius: 1px;
   margin: 10px;
   padding: 10px;
  display:flex;
  flex-direction: column;
+ font-size: 14px;
+  line-height: 19px;
 }
 
 .three-col article { 
@@ -82,15 +85,18 @@ h1{
 
 
 .inventory{
-  flex: auto;
-  background: rgba(0, 0, 0, 0.44);
+  flex: 8%;
+  background: rgba(80, 80, 80, 0.799);
   color: white;
   flex:auto;
   flex-direction:column;
-  margin: 50px;
+  margin: 10px;
   padding: 10px;
   position:relative;
   float: right;
+  font-size: 14px;
+  line-height: 19px;
+
 }
 
 .pageimg{
