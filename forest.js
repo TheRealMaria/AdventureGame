@@ -20,8 +20,6 @@ $('a.f1a').click(function () {
   }
 })
 
-
-
   $('a.f1b').click(function () {
     $('div.f1b').css('display', 'block')
     $('div div').not('.f1b').css('display', 'none')
@@ -29,8 +27,6 @@ $('a.f1a').click(function () {
     myPlace = localStorage.getItem('place')
     console.log(myPlace)
   })
-
-
 
   $('a.f2a').click(function () {
     $('div.f2a').css('display', 'block')
