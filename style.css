@@ -67,7 +67,7 @@ h1{
 }
 .three-col aside {
   background: rgba(80, 80, 80, 0.799);
-  flex: 8%;
+  flex: 15%;
   color: white;
   border-radius: 1px;
   margin: 10px;
