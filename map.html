@@ -35,9 +35,33 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/waypoint.js"></script>
     <script src="js/inview.js"></script>
-    <script>
+    <!-- <script>
       document.getElementById('center').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
-    </script>
+    </script> -->
+    <!-- <script>
+      var img = new Image(),
+        body = document.getElementsByTagName('body')[0]
+      img.src = 'images/map.png'
+      //body.appendChild(img)
+
+      var imageWidth = 3000,
+        imageHeight = 3000
+      console.log(imageWidth, imageHeight)
+
+      var vpWidth = document.documentElement.clientWidth,
+        vpHeight = document.documentElement.clientHeight
+
+      img.onload = function () {
+        var imageWidth = this.offsetWidth,
+          imageHeight = this.offsetHeight,
+          vpWidth = document.documentElement.clientWidth,
+          vpHeight = document.documentElement.clientHeight
+
+        this.style.position = 'absolute'
+        this.style.left = (vpWidth - imageWidth) / 2 + 'px'
+        this.style.top = (vpHeight - imageHeight) / 2 + window.pageYOffset + 'px'
+      }
+    </script> -->
 
     <script src="script.js"></script>
   </body>
