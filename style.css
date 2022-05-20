@@ -167,7 +167,8 @@ section#mapland {
     position:absolute;
     top: 19%;
     left: 15%;
-    
+    background: url(fieldmap.png);
+filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
   }
   .forest:hover {
     -ms-transform: scale(1.2); /* IE 9 */
@@ -179,6 +180,8 @@ section#mapland {
     position:absolute;
     top: 56%;
     left: 9%;
+    background: url(forestmap.png);
+filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
   }
   .mountain:hover {
     -ms-transform: scale(1.2); /* IE 9 */
@@ -190,6 +193,9 @@ section#mapland {
     position: absolute;
     top: 10%;
     left: 57%;
+    background: url(mountainmap.png);
+filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
+
     
   }
   .sea:hover {
@@ -202,6 +208,8 @@ section#mapland {
     position: absolute;
     top: 69%;
     left: 60%;
+    background: url(seamap.png);
+filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
    
   }
 
