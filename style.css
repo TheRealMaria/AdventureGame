@@ -1,29 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto+Slab:wght@200;800&display=swap');
 
 main {
-    width: 96%;
-    margin:auto;
-    border-radius: 12px;
-    padding: 100px 0px 0px 0px;
-    flex:100%;
-  }
-.aboutpage main{
-    background-image: url('images/map.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
+  width: 96%;
+  margin: auto;
+  border-radius: 12px;
+  padding: 100px 0px 0px 0px;
+  flex: 100%;
+}
+.aboutpage main {
+  background-image: url('images/map.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 .aboutpage article {
-  background: rgba(80, 80, 80, 0.799);;
+  background: rgba(80, 80, 80, 0.799);
   color: white;
   flex: 80%;
   padding: 10vw;
   margin: auto;
-  position:relative;
-
+  position: relative;
 }
 .abouttype {
-  background: #E9E7DA;
+  background: #e9e7da;
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: 400;
@@ -33,7 +32,7 @@ main {
 }
 
 body {
-  background: #E9E7DA;
+  background: #e9e7da;
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
   font-weight: 400;
@@ -48,37 +47,35 @@ body {
   text-align: center;
   display: inline-block;
   background-color: rgb(122, 12, 0);
-    color: white;
-    text-decoration:none;
-    margin-top: 5vw;
-    border-radius: 12px;
-    padding: 10px;
-    border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  margin-top: 5vw;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid white;
 }
-.storybody{
+.storybody {
   border: 8px solid white;
   margin: 12px;
   padding-left: 5vw;
   padding-right: 5vw;
   padding-bottom: 5vw;
   display: inline-block;
-
 }
-h1{
+h1 {
   text-align: center;
   font-family: 'Roboto Slab', serif;
   font-weight: 800;
 }
-h2{
+h2 {
   font-family: 'Roboto Slab', serif;
   font-weight: 200;
   font-size: 19px;
 }
-.three-col { 
-    display: flex;
-    flex-direction: row;
-    margin: auto ;
-
+.three-col {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
 }
 .three-col aside {
   background: rgba(80, 80, 80, 0.799);
@@ -87,14 +84,14 @@ h2{
   border-radius: 1px;
   margin: 10px;
   padding: 20px;
- display:flex;
- flex-direction: column;
- font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
   line-height: 19px;
   position: fixed;
 }
 
-.three-col article { 
+.three-col article {
   flex: 80%;
   position: relative;
   width: 800px;
@@ -102,16 +99,15 @@ h2{
   margin-right: 300px;
 }
 
-
-.inventory{
+.inventory {
   flex: 8%;
   background: rgba(80, 80, 80, 0.799);
   color: white;
-  flex:auto;
-  flex-direction:column;
+  flex: auto;
+  flex-direction: column;
   margin: 10px;
   padding: 20px;
-  position:relative;
+  position: relative;
   float: right;
   font-size: 14px;
   line-height: 19px;
@@ -119,134 +115,126 @@ h2{
   margin-left: 80vw;
 }
 
-.pageimg{
-width: 100%;
+.pageimg {
+  width: 100%;
 }
 
-  
 section#mapland {
-    width: 3000px;
-    height: 3000px;
-    margin: auto;
-    overflow: scroll;
-    position: relative;
-  }
-#map {
-    width: 100%;
-    cursor: move;
-    position: absolute;
-  }
-  
-#center {
-    position: absolute;
-    left: 30vw;
-    top: 30vw;
-    width: 100px;
-    height: 100px;
-    border: 1px solid red;
-  }
-  #mapbuttonmountain{
-    width:27vw;
+  width: 3000px;
+  height: 3000px;
+  margin: auto;
+  overflow: scroll;
+  position: relative;
 }
-  #mapbuttonforest{
-      width:23vw;
-  }
-  #mapbuttonsea{
-      width:20vw;
-  }
- #mapbuttonfield{
-        width:29vw;
-  }
-  .field:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); 
-     }
-.field {
-    display: flex;
-    position:absolute;
-    top: 19%;
-    left: 15%;
-    background: url(fieldmap.png);
-filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
-  }
-  .forest:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); 
-     }
-  .forest {
-    display:flex;
-    position:absolute;
-    top: 56%;
-    left: 9%;
-    background: url(forestmap.png);
-filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
-  }
-  .mountain:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); 
-     }
-  .mountain {
-    display: flex;
-    position: absolute;
-    top: 10%;
-    left: 57%;
-    background: url(mountainmap.png);
-filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
+#map {
+  width: 100%;
+  cursor: move;
+  position: absolute;
+  z-index: 1;
+}
 
-    
-  }
-  .sea:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); 
-     }
-  .sea {
-    display: flex;
-    position: absolute;
-    top: 69%;
-    left: 60%;
-    background: url(seamap.png);
-filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
-   
-  }
+#center {
+  position: absolute;
+  left: 1420px;
+  top: 1420px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid teal;
+  z-index: 2;
+}
+#mapbuttonmountain {
+  width: 27vw;
+}
+#mapbuttonforest {
+  width: 23vw;
+}
+#mapbuttonsea {
+  width: 20vw;
+}
+#mapbuttonfield {
+  width: 29vw;
+}
+.field:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.field {
+  display: flex;
+  position: absolute;
+  top: 19%;
+  left: 15%;
+  background: url(fieldmap.png);
+  filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
+}
+.forest:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.forest {
+  display: flex;
+  position: absolute;
+  top: 56%;
+  left: 9%;
+  background: url(forestmap.png);
+  filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
+}
+.mountain:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.mountain {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 57%;
+  background: url(mountainmap.png);
+  filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
+}
+.sea:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.sea {
+  display: flex;
+  position: absolute;
+  top: 69%;
+  left: 60%;
+  background: url(seamap.png);
+  filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
+}
 
 a {
-    z-index: 2;
-  }
+  z-index: 2;
+}
 
+br {
+  margin-bottom: 10px;
+}
 
+.button {
+  display: grid;
+  background-color: grey;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.button:hover {
+  text-align: center;
+  background-color: darkcyan;
+  color: aquamarine;
+  text-decoration: none;
+  border: 1px solid aquamarine;
+}
 
-  br {
-    margin-bottom: 10px;
-  }
-
-
-  
-  .button {
-    display:grid;
-    background-color: grey;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-    border-radius: 12px;
-    padding: 10px;
-    border: 1px solid black;
-    
-  }
-  .button:hover {
-    text-align: center;
-    background-color: darkcyan;
-    color: aquamarine;
-    text-decoration: none;
-    border: 1px solid aquamarine;
-  }
-
-
-  div div:not(.one) {
-    display: none;
-  }
+div div:not(.one) {
+  display: none;
+}
