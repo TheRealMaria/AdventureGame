@@ -119,18 +119,32 @@ h2 {
   width: 100%;
 }
 
-section#mapland {
+#mapdiv {
   width: 3000px;
   height: 3000px;
+  cursor: move;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+section#mapland {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3000px;
+  height: 3000px;
+  max-width: 3000px;
+  max-height: 3000px;
   margin: auto;
-  overflow: scroll;
+  /* overflow: scroll; */
   position: relative;
+  cursor: move;
 }
 #map {
   width: 100%;
-  cursor: move;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 }
 
 #center {
@@ -139,8 +153,8 @@ section#mapland {
   top: 1420px;
   width: 100px;
   height: 100px;
-  border: 1px solid teal;
-  z-index: 2;
+  border: 8px solid teal;
+  z-index: 2000;
 }
 #mapbuttonmountain {
   width: 27vw;
@@ -164,7 +178,7 @@ section#mapland {
   position: absolute;
   top: 19%;
   left: 15%;
-  background: url(fieldmap.png);
+  background: url(images/fieldmap.png);
   filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
 }
 .forest:hover {
@@ -177,7 +191,7 @@ section#mapland {
   position: absolute;
   top: 56%;
   left: 9%;
-  background: url(forestmap.png);
+  background: url(images/forestmap.png);
   filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
 }
 .mountain:hover {
@@ -190,7 +204,7 @@ section#mapland {
   position: absolute;
   top: 10%;
   left: 57%;
-  background: url(mountainmap.png);
+  background: url(images/mountainmap.png);
   filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
 }
 .sea:hover {
@@ -203,7 +217,7 @@ section#mapland {
   position: absolute;
   top: 69%;
   left: 60%;
-  background: url(seamap.png);
+  background: url(images/seamap.png);
   filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
 }
 

@@ -13,20 +13,32 @@
 
   <body>
     <section id="mapland">
-      <img id="map" src="images/map.png" />
-
-      <a href="forest.html" class="forest"> <img id="mapbuttonforest" src="images/forestmap.png" /></a>
-      <a href="field.html" class="field"><img id="mapbuttonfield" src="images/fieldmap.png" /></a>
-      <a href="mountain.html" class="mountain"><img id="mapbuttonmountain" src="images/mountainmap.png" /></a>
-      <a href="sea.html" class="sea"><img id="mapbuttonsea" src="images/seamap.png" /></a>
       <div id="center"></div>
+      <div id="mapdiv">
+        <img id="map" src="images/map.png" />
+
+        <a href="forest.html" class="forest">
+          <img id="mapbuttonforest" src="images/forestmap.png" />
+        </a>
+        <a href="field.html" class="field">
+          <img id="mapbuttonfield" src="images/fieldmap.png" />
+        </a>
+        <a href="mountain.html" class="mountain">
+          <img id="mapbuttonmountain" src="images/mountainmap.png" />
+        </a>
+        <a href="sea.html" class="sea">
+          <img id="mapbuttonsea" src="images/seamap.png" />
+        </a>
+      </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/waypoint.js"></script>
+    <script src="js/inview.js"></script>
     <script>
       document.getElementById('center').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
     </script>
+
     <script src="script.js"></script>
   </body>
 </html>
