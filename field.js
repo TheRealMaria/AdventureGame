@@ -60,3 +60,9 @@ $('a.d1a').click(function () {
     myPlace = localStorage.getItem('place')
     console.log(myPlace)
   })
+
+
+  if(document.getElementById('d2c').clicked == true)
+{
+   alert("button was clicked");
+}

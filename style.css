@@ -7,6 +7,12 @@ main {
   padding: 100px 0px 0px 0px;
   flex: 100%;
 }
+.landing main {
+  background-image: url('images/landingimg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 .aboutpage main {
   background-image: url('images/map.png');
   background-repeat: no-repeat;
@@ -59,6 +65,8 @@ position:sticky;
 display:flex;
 border: 2px solid red;
 flex: 100%;
+width:50%;
+height: 780px;
 }
 
 .storybody {
