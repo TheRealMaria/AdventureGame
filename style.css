@@ -54,6 +54,13 @@ body {
   padding: 10px;
   border: 1px solid white;
 }
+.landing {
+position:sticky;
+display:flex;
+border: 2px solid red;
+flex: 100%;
+}
+
 .storybody {
   border: 8px solid white;
   margin: 12px;
@@ -130,8 +137,7 @@ h2 {
 }
 section#mapland {
   position: absolute;
-  left: -620px;
-  top: 920px;
+  
   width: 3000px;
   height: 3000px;
   max-width: 3000px;
@@ -140,9 +146,11 @@ section#mapland {
   /* overflow: scroll; */
   position: relative;
   cursor: move;
+   /* left: -620px; */
+/* top: 920px; */
 }
 #map {
-  width: 100%;
+  width: 98%;
   position: absolute;
   z-index: -1;
 }
@@ -179,7 +187,7 @@ section#mapland {
   top: 19%;
   left: 15%;
   background: url(images/fieldmap.png);
-  filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(13px 14px 7px #008b8b);
 }
 .forest:hover {
   -ms-transform: scale(1.2); /* IE 9 */
@@ -192,7 +200,7 @@ section#mapland {
   top: 56%;
   left: 9%;
   background: url(images/forestmap.png);
-  filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(13px 14px 7px #008b8b);
 }
 .mountain:hover {
   -ms-transform: scale(1.2); /* IE 9 */
@@ -205,7 +213,7 @@ section#mapland {
   top: 10%;
   left: 57%;
   background: url(images/mountainmap.png);
-  filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(13px 14px 7px #008b8b);
 }
 .sea:hover {
   -ms-transform: scale(1.2); /* IE 9 */
@@ -218,7 +226,7 @@ section#mapland {
   top: 69%;
   left: 60%;
   background: url(images/seamap.png);
-  filter: drop-shadow(13px 14px 7px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(13px 14px 7px #008b8b);
 }
 
 a {
@@ -243,7 +251,7 @@ br {
 }
 .button:hover {
   text-align: center;
-  background-color: darkcyan;
+  background-color: #008b8b;
   color: aquamarine;
   text-decoration: none;
   border: 1px solid aquamarine;
