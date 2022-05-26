@@ -195,7 +195,7 @@ section#mapland {
   top: 19%;
   left: 15%;
   background: url(images/fieldmap.png);
-  filter: drop-shadow(13px 14px 7px #008b8b);
+  filter: drop-shadow(13px 14px 7px #000000);
 }
 .forest:hover {
   -ms-transform: scale(1.2); /* IE 9 */
@@ -208,7 +208,7 @@ section#mapland {
   top: 56%;
   left: 9%;
   background: url(images/forestmap.png);
-  filter: drop-shadow(13px 14px 7px #008b8b);
+  filter: drop-shadow(13px 14px 7px #000000);
 }
 .mountain:hover {
   -ms-transform: scale(1.2); /* IE 9 */
@@ -221,7 +221,7 @@ section#mapland {
   top: 10%;
   left: 57%;
   background: url(images/mountainmap.png);
-  filter: drop-shadow(13px 14px 7px #008b8b);
+  filter: drop-shadow(13px 14px 7px #000000);
 }
 .sea:hover {
   -ms-transform: scale(1.2); /* IE 9 */
@@ -234,7 +234,7 @@ section#mapland {
   top: 69%;
   left: 60%;
   background: url(images/seamap.png);
-  filter: drop-shadow(13px 14px 7px #008b8b);
+  filter: drop-shadow(13px 14px 7px #000000);
 }
 
 a {
