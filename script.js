@@ -47,3 +47,5 @@ function dragElement(elmnt) {
     document.onmousemove = null
   }
 }
+
+console.log(localStorage.getItem('place'))
