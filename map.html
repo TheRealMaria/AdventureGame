@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Lands of Orphya</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,13 +12,10 @@
   </head>
 
   <body>
+    <div id="center"></div>
     <section id="mapland">
-      <div id="center"></div>
       <div id="mapdiv">
         <img id="map" src="images/map.png" />
-
-
-
 
         <a href="forest.html" class="forest">
           <img id="mapbuttonforest" src="images/forestmap.png" />
@@ -26,6 +23,8 @@
         <a href="field.html" class="field">
           <img id="mapbuttonfield" src="images/fieldmap.png" />
         </a>
+        <div id="left-scroller"></div>
+        <a href="#" class="clickdrag"><img id="mapclickdrag" src="images/clickdrag.png" /></a>
         <a href="mountain.html" class="mountain">
           <img id="mapbuttonmountain" src="images/mountainmap.png" />
         </a>
@@ -36,35 +35,36 @@
     </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/waypoint.js"></script>
-    <script src="js/inview.js"></script>
-    <!-- <script>
-      document.getElementById('center').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
-    </script> -->
-    <!-- <script>
+    <!-- <script src="js/waypoint.js"></script>
+    <script src="js/inview.js"></script> -->
+
+    <script>
       var img = new Image(),
-        body = document.getElementsByTagName('body')[0]
-      img.src = 'images/map.png'
-      //body.appendChild(img)
+  body = document.getElementsByTagName('body')[0]
+img.src = 'images/map.png'
+//body.appendChild(img)
 
-      var imageWidth = 3000,
-        imageHeight = 3000
-      console.log(imageWidth, imageHeight)
+var imageWidth = 3000,
+  imageHeight = 3000
+console.log(imageWidth, imageHeight)
 
-      var vpWidth = document.documentElement.clientWidth,
-        vpHeight = document.documentElement.clientHeight
+var vpWidth = document.documentElement.clientWidth,
+  vpHeight = document.documentElement.clientHeight
 
-      img.onload = function () {
-        var imageWidth = this.offsetWidth,
-          imageHeight = this.offsetHeight,
-          vpWidth = document.documentElement.clientWidth,
-          vpHeight = document.documentElement.clientHeight
+img.onload = function () {
+  var imageWidth = this.offsetWidth,
+    imageHeight = this.offsetHeight,
+    vpWidth = document.documentElement.clientWidth,
+    vpHeight = document.documentElement.clientHeight
 
-        this.style.position = 'absolute'
-        this.style.left = (vpWidth - imageWidth) / 2 + 'px'
-        this.style.top = (vpHeight - imageHeight) / 2 + window.pageYOffset + 'px'
-      }
-    </script> -->
+  this.style.position = 'absolute'
+  this.style.left = (vpWidth - imageWidth) / 2 + 'px'
+  this.style.top = (vpHeight - imageHeight) / 2 + window.pageYOffset + 'px'
+}
+
+    </script>
+
+   
 
     <script src="script.js"></script>
   </body>

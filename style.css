@@ -74,7 +74,6 @@ body {
   border: 1px solid white;
 }
 
-
 .storybody {
   border: 8px solid white;
   margin: 12px;
@@ -167,13 +166,13 @@ h2 {
   height: 3000px;
   cursor: move;
   position: absolute;
-
+  transform: translateX(-20%) translateY(-35%);
   top: 0;
   left: 0;
 }
 section#mapland {
   position: absolute;
-  
+
   width: 3000px;
   height: 3000px;
   max-width: 3000px;
@@ -182,13 +181,15 @@ section#mapland {
   /* overflow: scroll; */
   position: relative;
   cursor: move;
-   /* left: -620px; */
-/* top: 920px; */
+  /* left: -620px; */
+  /* top: 920px; */
 }
 #map {
   width: 98%;
   position: absolute;
   z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 #center {
@@ -197,7 +198,6 @@ section#mapland {
   top: 1420px;
   width: 100px;
   height: 100px;
-  border: 8px solid teal;
   z-index: 2000;
 }
 #mapbuttonmountain {
@@ -212,6 +212,9 @@ section#mapland {
 #mapbuttonfield {
   width: 29vw;
 }
+#mapclickdrag {
+  width: 38vw;
+}
 .field:hover {
   -ms-transform: scale(1.2); /* IE 9 */
   -webkit-transform: scale(1.2); /* Safari 3-8 */
@@ -223,6 +226,25 @@ section#mapland {
   top: 19%;
   left: 15%;
   filter: drop-shadow(18px 22px 14px rgba(0, 0, 0, 0.25));
+}
+.clickdrag {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  /* position: absolute;
+  left: 1200px;
+  top: 1250px;
+  filter: drop-shadow(18px 22px 14px rgba(0, 0, 0, 0.25)); */
+}
+#left-scroller {
+  position: absolute;
+  top: 43%;
+  left: 22%;
+}
+.clickdrag:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
 }
 .forest:hover {
   -ms-transform: scale(1.2); /* IE 9 */
