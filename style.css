@@ -144,7 +144,7 @@ h2 {
   height: 3000px;
   cursor: move;
   position: absolute;
-
+  transform: translateX(-20%) translateY(-35%);
   top: 0;
   left: 0;
 }
@@ -166,6 +166,8 @@ section#mapland {
   width: 98%;
   position: absolute;
   z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 #center {
@@ -189,7 +191,7 @@ section#mapland {
   width: 29vw;
 }
 #mapclickdrag {
-  width: 32vw;
+  width: 38vw;
 }
 .field:hover {
   -ms-transform: scale(1.2); /* IE 9 */
@@ -205,8 +207,8 @@ section#mapland {
 }
 .clickdrag {
   position: absolute;
-  top: 43%;
-  left: 42%;
+  top: 40%;
+  left: 38%;
   /* position: absolute;
   left: 1200px;
   top: 1250px;

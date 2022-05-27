@@ -35,37 +35,36 @@
     </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/waypoint.js"></script>
-    <script src="js/inview.js"></script>
+    <!-- <script src="js/waypoint.js"></script>
+    <script src="js/inview.js"></script> -->
 
     <script>
-      //when the page loads, scroll to the #center id.
-    </script>
-    <script>
-      //$(window).load(document.getElementById('mapclickdrag').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' }))
+      var img = new Image(),
+  body = document.getElementsByTagName('body')[0]
+img.src = 'images/map.png'
+//body.appendChild(img)
 
-      //var waypoint = new Waypoint({
-      //element: document.getElementById('mapclickdrag'),
-      //handler: function (direction) {
-      //console.log('Scrolled to waypoint!')
-      //}
-      //})
-    </script>
-    <script>
-      $('document').ready(function (e) {
-        e.preventDefault()
+var imageWidth = 3000,
+  imageHeight = 3000
+console.log(imageWidth, imageHeight)
 
-        var position1 = $('#mapclickdrag').offset().top
-        var position2 = $('#left-scroller')
+var vpWidth = document.documentElement.clientWidth,
+  vpHeight = document.documentElement.clientHeight
 
-        $('body, html').animate(
-          {
-            scrollTop: position1,
-            scrollLeft: position1
-          } /* speed */
-        )
-      })
+img.onload = function () {
+  var imageWidth = this.offsetWidth,
+    imageHeight = this.offsetHeight,
+    vpWidth = document.documentElement.clientWidth,
+    vpHeight = document.documentElement.clientHeight
+
+  this.style.position = 'absolute'
+  this.style.left = (vpWidth - imageWidth) / 2 + 'px'
+  this.style.top = (vpHeight - imageHeight) / 2 + window.pageYOffset + 'px'
+}
+
     </script>
+
+   
 
     <script src="script.js"></script>
   </body>

@@ -28,3 +28,31 @@ $('document').load(function () {
     .animate({ scrollTop: $('#mapclickdrag').offset().top }, 'slow')
     .animate({ scrollLeft: $('#mapclickdrag').offset().left }, 'slow')
 })
+
+
+<script>
+      //$(window).load(document.getElementById('mapclickdrag').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' }))
+
+      //var waypoint = new Waypoint({
+      //element: document.getElementById('mapclickdrag'),
+      //handler: function (direction) {
+      //console.log('Scrolled to waypoint!')
+      //}
+      //})
+    </script>
+
+
+     <script>
+      $(document).ready(function (e) {
+        e.preventDefault()
+
+        var position = $('#mapclickdrag').offset().top
+
+        $('body, html').animate(
+          {
+            scrollTop: position,
+            scrollLeft: position
+          } /* speed */
+        )
+      })
+    </script>
