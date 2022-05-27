@@ -1,26 +1,64 @@
+$('#local-status').html(localStorage.getItem('place'))
 
 let myPlace = localStorage.getItem('place')
 
-if (myPlace) {
+if (!myPlace) {
   localStorage.setItem('place', 'one')
   myPlace = 'one'
-  console.log(myPlace)
+  console.log(localStorage.getItem('place'))
 } else {
   myPlace = localStorage.getItem('place')
   console.log(myPlace)
 }
-
-$('a.f1a').click(function () {
-  localStorage.setItem('place', 'f1a')
-  myPlace = localStorage.getItem('place')
-  console.log(myPlace)
-  if (myPlace == 'f1a') {
+// if you have d2c as your local storage, then the button on  d2a needs to change go to d2a2
+if (localStorage.getItem('place') == 'f2c') {
+  $('a.f1a').click(function () {
+    $('div.f1a2').css('display', 'block')
+    $('div div').not('.f1a2').css('display', 'none')
+    localStorage.setItem('place', 'f2c')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
+  })
+} else {
+  $('a.f1a').click(function () {
     $('div.f1a').css('display', 'block')
     $('div div').not('.f1a').css('display', 'none')
-  }
+    localStorage.setItem('place', 'f1a')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
+  })
+}
+
+$('a.f1a2').click(function () {
+  $('div.f1a2').css('display', 'block')
+  $('div div').not('.f1a2').css('display', 'none')
+  localStorage.setItem('place', 'f1a2')
+  myPlace = localStorage.getItem('place')
+  console.log(myPlace)
 })
 
-  $('a.f1b').click(function () {
+$('a.f1b2').click(function () {
+  $('div.f1b2').css('display', 'block')
+  $('div div').not('.f1b2').css('display', 'none')
+  localStorage.setItem('place', 'f1b2')
+  myPlace = localStorage.getItem('place')
+  console.log(myPlace)
+})
+$('a.f2a2').click(function () {
+  $('div.f2a2').css('display', 'block')
+  $('div div').not('.f2a2').css('display', 'none')
+  localStorage.setItem('place', 'f2a2')
+  myPlace = localStorage.getItem('place')
+  console.log(myPlace)
+})
+$('a.f2b2').click(function () {
+  $('div.f2b2').css('display', 'block')
+  $('div div').not('.f2b2').css('display', 'none')
+  localStorage.setItem('place', 'f2b2')
+  myPlace = localStorage.getItem('place')
+  console.log(myPlace)
+})
+$('a.f1b').click(function () {
     $('div.f1b').css('display', 'block')
     $('div div').not('.f1b').css('display', 'none')
     localStorage.setItem('place', 'f1b')

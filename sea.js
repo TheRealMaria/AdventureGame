@@ -29,9 +29,45 @@ $('a.s1a').click(function () {
     myPlace = localStorage.getItem('place')
     console.log(myPlace)
   })
-
-
-
+// if you have d2c as your local storage, then the button on  d2a needs to change go to d2a2
+if (localStorage.getItem('place') == 's2b') {
+  $('a.s1b').click(function () {
+    $('div.s1b2').css('display', 'block')
+    $('div div').not('.s1b2').css('display', 'none')
+    localStorage.setItem('place', 's2b')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
+  })
+} else {
+  $('a.d1b').click(function () {
+    $('div.s1b').css('display', 'block')
+    $('div div').not('.s1b').css('display', 'none')
+    localStorage.setItem('place', 's1b')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
+  })
+}
+  $('a.s1b2').click(function () {
+    $('div.s1b2').css('display', 'block')
+    $('div div').not('.s1b2').css('display', 'none')
+    localStorage.setItem('place', 's1b2')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
+  })
+  $('a.s2d2').click(function () {
+    $('div.s2d2').css('display', 'block')
+    $('div div').not('.s2d2').css('display', 'none')
+    localStorage.setItem('place', 's2d2')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
+  })
+  $('a.s2c2').click(function () {
+    $('div.s2c2').css('display', 'block')
+    $('div div').not('.s2c2').css('display', 'none')
+    localStorage.setItem('place', 's2c2')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
+  })
   $('a.s2a').click(function () {
     $('div.s2a').css('display', 'block')
     $('div div').not('.s2a').css('display', 'none')
