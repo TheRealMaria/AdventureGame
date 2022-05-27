@@ -135,6 +135,28 @@ h2 {
   position: fixed;
   margin-left: 80vw;
 }
+.invfield{
+  margin:5px;
+  border: solid white; 
+  flex: 20%;
+}
+.invforest{
+  margin:5px;
+  border: solid white; 
+  flex: 20%;
+}
+.invmountain{
+  margin:5px;
+  border: solid white; 
+  flex: 20%;
+}
+.invsea{
+  margin:5px;
+  border: solid white; 
+  width: auto;
+  height: auto;
+
+}
 
 .pageimg {
   width: 100%;
