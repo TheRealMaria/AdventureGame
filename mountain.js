@@ -1,14 +1,17 @@
 
+$('#local-status').html(localStorage.getItem('place'))
+
 let myPlace = localStorage.getItem('place')
 
-if (myPlace) {
+if (!myPlace) {
   localStorage.setItem('place', 'one')
   myPlace = 'one'
-  console.log(myPlace)
+  console.log(localStorage.getItem('place'))
 } else {
   myPlace = localStorage.getItem('place')
   console.log(myPlace)
 }
+
 
 $('a.m1a').click(function () {
   localStorage.setItem('place', 'm1a')
@@ -20,8 +23,16 @@ $('a.m1a').click(function () {
   }
 })
 
-
-
+  // if you have d2c as your local storage, then the button on  d2a needs to change go to d2a2
+if (localStorage.getItem('place') == 'm2a') {
+  $('a.m1b').click(function () {
+    $('div.m1b2').css('display', 'block')
+    $('div div').not('.m1b2').css('display', 'none')
+    localStorage.setItem('place', 'm2a')
+    myPlace = localStorage.getItem('place')
+    console.log(myPlace)
+  })
+} else {
   $('a.m1b').click(function () {
     $('div.m1b').css('display', 'block')
     $('div div').not('.m1b').css('display', 'none')
@@ -29,9 +40,28 @@ $('a.m1a').click(function () {
     myPlace = localStorage.getItem('place')
     console.log(myPlace)
   })
-
-
-
+}
+$('a.m1b2').click(function () {
+  $('div.m1b2').css('display', 'block')
+  $('div div').not('.m1b2').css('display', 'none')
+  localStorage.setItem('place', 'm1b2')
+  myPlace = localStorage.getItem('place')
+  console.log(myPlace)
+})
+$('a.m2c2').click(function () {
+  $('div.m2c2').css('display', 'block')
+  $('div div').not('.m2c2').css('display', 'none')
+  localStorage.setItem('place', 'm2c2')
+  myPlace = localStorage.getItem('place')
+  console.log(myPlace)
+})
+$('a.m2d2').click(function () {
+  $('div.m2d2').css('display', 'block')
+  $('div div').not('.m2d2').css('display', 'none')
+  localStorage.setItem('place', 'm2d2')
+  myPlace = localStorage.getItem('place')
+  console.log(myPlace)
+})
   $('a.m2a').click(function () {
     $('div.m2a').css('display', 'block')
     $('div div').not('.m2a').css('display', 'none')
