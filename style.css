@@ -133,28 +133,32 @@ h2 {
   line-height: 19px;
   position: fixed;
   margin-left: 80vw;
+  
 }
 .invfield{
   margin:5px;
   border: solid white; 
   flex: 20%;
+  width: 50px;
 }
 .invforest{
   margin:5px;
   border: solid white; 
   flex: 20%;
+  width: 50px;
 }
 .invmountain{
   margin:5px;
   border: solid white; 
   flex: 20%;
+  width: 50px;
 }
 .invsea{
   margin:5px;
   border: solid white; 
   width: auto;
   height: auto;
-
+  width: 50px;
 }
 
 .pageimg {
@@ -213,7 +217,7 @@ section#mapland {
   width: 29vw;
 }
 #mapclickdrag {
-  width: 38vw;
+  width: 45vw;
 }
 .field:hover {
   -ms-transform: scale(1.2); /* IE 9 */
@@ -229,8 +233,8 @@ section#mapland {
 }
 .clickdrag {
   position: absolute;
-  top: 40%;
-  left: 38%;
+  top: 40.5%;
+  left: 37.5%;
   /* position: absolute;
   left: 1200px;
   top: 1250px;
@@ -241,11 +245,7 @@ section#mapland {
   top: 43%;
   left: 22%;
 }
-.clickdrag:hover {
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2);
-}
+
 .forest:hover {
   -ms-transform: scale(1.2); /* IE 9 */
   -webkit-transform: scale(1.2); /* Safari 3-8 */
