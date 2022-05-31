@@ -139,26 +139,26 @@ h2 {
   margin:5px;
   border: solid white; 
   flex: 20%;
-  width: 50px;
+  width: 100px;
 }
 .invforest{
   margin:5px;
   border: solid white; 
   flex: 20%;
-  width: 50px;
+  width: 100px;
 }
 .invmountain{
   margin:5px;
   border: solid white; 
   flex: 20%;
-  width: 50px;
+  width: 100px;
 }
 .invsea{
   margin:5px;
   border: solid white; 
   width: auto;
   height: auto;
-  width: 50px;
+  width: 100px;
 }
 
 .pageimg {
