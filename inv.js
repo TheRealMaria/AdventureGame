@@ -1,4 +1,4 @@
-// if you have d2c as your local storage, then the button on  d2a needs to change go to d2a2
+
 if (localStorage.getItem('place') == 'd2a2') {
     $('a.d2a2').click(function () {
       $('.invforest').css('display', 'block')
@@ -15,3 +15,7 @@ if (localStorage.getItem('place') == 'd2a2') {
       console.log(myPlace)
     })
   }
+  if (localStorage.getItem('place') == 'f2b2') {
+    $('.invforest').css('display', 'block')
+  }
+ 

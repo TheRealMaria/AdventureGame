@@ -94,3 +94,4 @@ $('a.f1b').click(function () {
     myPlace = localStorage.getItem('place')
     console.log(myPlace)
   })
+  
