@@ -140,7 +140,7 @@ h2 {
   border: solid white; 
   flex: 20%;
   width: 100px;
- 
+ display: none;
 }
 .invforest{
   margin:5px;
